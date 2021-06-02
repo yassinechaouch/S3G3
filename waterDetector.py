@@ -68,9 +68,9 @@ def main():
                   if loop_counter == 1:
                        server = smtplib.SMTP('smtp.gmail.com', 587)
                        server.starttls()
-                       server.login(sabroutmanaiii@gmail.com, sabrout25524295)
+                       server.login("sender email", "sender password")
                        msg = "it sure is wet down here!"
-                       server.sendmail(sabroutmanaiii@gmail.com, sabri.manai@medtech.tn, msg)
+                       server.sendmail("sender email", "receiver email", msg)
                        server.quit()
 if __name__ == '__main__':
         try:
